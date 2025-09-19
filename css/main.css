@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+}
+
+:root {
+
+    --color-primary-background: #ffffff;
+    --color-secondary-background: #F3F6FF;
+    --color-heading-text: #0B0F19;
+    --color-paragraph: #565973; 
+    --color-button: #6366F1;
+    --color-store-badge-background: #0B0F19;
+    --color-store-badge-text: #ffffff;
+    --color-brands-logo: #B4B7C9; 
+    --color-brands-logo-border: #E2E5F1;
+
+}
+
+body {
+    font-size: 16px;
+    font-family: "Manrope", serif;
+    background-color: var(--color-primary-background);
+}
+
+/* ------------------------------ MOBILE ------------------------------ */
+
+
+/* ---------- Header ---------- */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem .8rem;
+
+    
+    .actions {
+        display: flex;
+        align-items: center;
+    }
+
+    .darkmode-text {
+        display: none;
+    }
+
+    .darkmode-slider {
+
+    }
+
+    .sign-in-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-button);
+        border-radius: 4px;
+        padding: 10px 20px;
+    }
+
+    .sign-in-icon {
+        display: block;     
+    }
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+
+    .hero-heading {
+        text-align: center;
+        line-height: 130%;
+        font-size: 3.5rem;
+        color: var(--color-heading-text);
+        margin: 2rem 1rem;
+    }
+
+    .hero-paragraph {
+        text-align: center;
+        margin: 1rem;
+        font-size: 1.125rem;
+        color: var(--color-paragraph);
+        line-height: 160%;
+        margin-bottom: 3.5rem;
+    }
+
+    .store-badges {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 0 1rem;
+
+    }
+
+    .store-badge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-store-badge-background);
+        text-decoration: none;
+        line-height: 80%;
+        color: var(--color-store-badge-text);
+        border-radius: 8px;
+        height: 48px;
+
+    }
+
+    .store-badge-text {
+        display: flex;
+        flex-direction: column;
+        margin-left: .5rem;
+    }
+
+    .badge-top {
+        font-size: 0.6rem;
+
+    }
+
+
+
+    
+}
+
+
+
+
+
