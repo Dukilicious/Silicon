@@ -6,40 +6,54 @@
     box-sizing: border-box;
 }
 
-html {
-
+html, body {
+    font-size: 16px;
+    font-family: "Manrope", serif;
+    background-color: var(--color-primary-background);
+    scroll-behavior: smooth;
 }
 
 :root {
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.750rem;
+    --font-size-h4: 1.5rem;
+    --font-size-h5: 1.250rem;
+    --font-size-h6: 1rem;
+    
+    --font-size-d4: 3.5rem;
+    
+    --font-size-lead: 1.5rem;
+    --font-size-xl: 1.250rem; 
+    --font-size-large: 1.125rem;
+    --font-size-medium: 1rem;
+    --font-size-small: 0.875rem;
+    --font-size-xs: 0.750rem;
 
     --color-primary-background: #ffffff;
     --color-secondary-background: #F3F6FF;
-    --color-heading-text: #0B0F19;
-    --color-paragraph: #565973; 
+    --color-text-gray900: #0B0F19;
+    --color-text-gray700: #565973; 
+    --color-text-gray600: #9397AD; 
     --color-button: #6366F1;
     --color-store-badge-background: #0B0F19;
     --color-store-badge-text: #ffffff;
     --color-brands-logo: #B4B7C9; 
     --color-brands-logo-border: #E2E5F1;
+    --color-features-icon-background: rgba(99, 102, 241, 0.08)
 
-}
-
-body {
-    font-size: 16px;
-    font-family: "Manrope", serif;
-    background-color: var(--color-primary-background);
 }
 
 /* ------------------------------ MOBILE ------------------------------ */
 
 
-/* ---------- Header ---------- */
+/* ------------------------------ Header ------------------------------ */
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem .8rem;
+    padding: 1rem;
 
     
     .actions {
@@ -49,10 +63,6 @@ body {
 
     .darkmode-text {
         display: none;
-    }
-
-    .darkmode-slider {
-
     }
 
     .sign-in-btn {
@@ -75,23 +85,22 @@ body {
 .hero-container {
     display: flex;
     flex-direction: column;
-    height: 100dvh;
+    margin-bottom: 6rem;
 
     .hero-heading {
         text-align: center;
         line-height: 130%;
-        font-size: 3.5rem;
-        color: var(--color-heading-text);
-        margin: 2rem 1rem;
+        font-size: var(--font-size-d4);
+        color: var(--color-text-gray900);
+        margin: 4rem 1rem;
     }
 
     .hero-paragraph {
         text-align: center;
-        margin: 1rem;
-        font-size: 1.125rem;
-        color: var(--color-paragraph);
+        margin: 0 1rem 6rem 1rem;
+        font-size: var(--font-size-large);
+        color: var(--color-text-gray700);
         line-height: 160%;
-        margin-bottom: 3.5rem;
     }
 
     .store-badges {
@@ -122,14 +131,115 @@ body {
     }
 
     .badge-top {
-        font-size: 0.6rem;
+          font-size: 0.57rem;
 
+    }    
+}
+
+
+/* ------------------------------- Features ------------------------------ */
+
+.features-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+    .features-heading {
+        font-size: var(--font-size-h1);
+        color: var(--color-text-gray900);
+        margin: 0 1rem 1rem 1rem;
+    }
+
+    .features-paragraph {
+        font-size: var(--font-size-large);
+        color: var(--color-text-gray600);
+        margin: 0 1rem 3rem 1rem;
+        text-align: center;
     }
 
 
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0 1rem;
+        margin: 0 .5rem;
 
-    
+    }
+
+    .feature-group {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .features-icon {
+        display: block;
+        background-color: var(--color-features-icon-background);
+        padding: 0.8rem 1rem;
+        border-radius: 8px;      
+    }
+
+    .feature-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        max-width: 261px;
+
+        .feature-h5 {
+            font-size: var(--font-size-h5);
+            color: var(--color-text-gray900);
+        }
+
+        .feature-p {
+            font-size: var(--font-size-medium);
+            color: var(--color-text-gray700);
+        }
+    }
 }
+
+
+/* ------------------------------ How Does It Work ------------------------------ */
+
+.how-does-it-work-container {
+    background-color: var(--color-secondary-background);
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .how-does-it-work-h1 {
+        font-size: var(--font-size-h1);
+        color: var(--color-text-gray900);
+    }
+
+    .hdiw-iphone-center {
+        margin: 2rem 0;
+        width: 80%;
+        max-width: 330px;
+    }
+
+    .how-does-it-work-h4 {
+        font-size: var(--font-size-h4);
+        color: var(--color-text-gray900);
+        margin-bottom: 1rem;
+    }
+
+    .how-does-it-work-p {
+        font-size: var(--font-size-medium);
+        color: var(--color-text-gray700);
+        max-width: 640px;
+    }
+}
+
+
+
+
+
+
 
 
 
