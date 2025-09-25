@@ -35,7 +35,7 @@ html, body {
     --color-text-gray900: #0B0F19;
     --color-text-gray700: #565973; 
     --color-text-gray600: #9397AD; 
-    --color-button: #6366F1;
+    --color-brand-primary: #6366F1;
     --color-store-badge-background: #0B0F19;
     --color-store-badge-text: #ffffff;
     --color-brands-logo: #B4B7C9; 
@@ -44,7 +44,7 @@ html, body {
 
 }
 
-/* ------------------------------ MOBILE ------------------------------ */
+/* ---------------------------------------- MOBILE ---------------------------------------- */
 
 
 /* ------------------------------ Header ------------------------------ */
@@ -69,7 +69,7 @@ html, body {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: var(--color-button);
+        background-color: var(--color-brand-primary);
         border-radius: 4px;
         padding: 10px 20px;
     }
@@ -80,7 +80,7 @@ html, body {
 }
 
 
-/* ---------- Hero ---------- */
+/* ------------------------------ Hero ------------------------------ */
 
 .hero-container {
     display: flex;
@@ -218,8 +218,7 @@ html, body {
 
     .hdiw-iphone-center {
         margin: 2rem 0;
-        width: 80%;
-        max-width: 330px;
+
     }
 
     .how-does-it-work-h4 {
@@ -236,12 +235,92 @@ html, body {
 }
 
 
+/* ------------------------------ App Features ------------------------------ */
 
+.app-features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    text-align: center;
+}
 
+.app-features-box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
 
+    .app-features-first-heading {
+        font-size: var(--font-size-h2);
+        color: var(--color-text-gray900);
+        max-width: 420px;
+    }
 
+    .app-features-list {
+        font-size: var(--font-size-medium);
+        color: var(--color-text-gray700);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
 
+    }
+    
+    .app-features-checkbox {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid var(--color-brand-primary);
+        position: relative;
+    }
 
+    .app-features-checkbox::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 5px;
+        height: 9px;
+        border-right: 2px solid var(--color-brand-primary);
+        border-bottom: 2px solid var(--color-brand-primary);
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    
+    .learn-more-button1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-brand-primary);
+        width: 160px;
+        height: 45px;
+        border-radius: 5px;
+    }
+    
+    .learn-more {
+        display: flex;
+        text-decoration: none;
+        gap: 0.5rem;
+        font-size: var(--font-size-small);
+    }
 
+    .learn-more:visited {
+            color: var(--color-primary-background);
+            text-decoration: none;
+    }
+}
 
+.app-features-box2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
 
+    .app-features-second-heading {
+        font-size: var(--font-size-h2);
+        color: var(--color-text-gray900);
+        max-width: 530px;
+    }
+}
