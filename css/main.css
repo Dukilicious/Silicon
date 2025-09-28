@@ -33,14 +33,17 @@ html, body {
     --color-primary-background: #ffffff;
     --color-secondary-background: #F3F6FF;
     --color-text-gray900: #0B0F19;
+    --color-text-gray800: #33354D;
     --color-text-gray700: #565973; 
-    --color-text-gray600: #9397AD; 
+    --color-text-gray600: #9397AD;
+    --color-text-gray100: #F3F6FF;
     --color-brand-primary: #6366F1;
     --color-store-badge-background: #0B0F19;
     --color-store-badge-text: #ffffff;
     --color-brands-logo: #B4B7C9; 
     --color-brands-logo-border: #E2E5F1;
-    --color-features-icon-background: rgba(99, 102, 241, 0.08)
+    --color-features-icon-background: rgba(99, 102, 241, 0.08);
+    --color-hover-background: rgba(0, 0, 0, 0.1); 
 
 }
 
@@ -82,7 +85,7 @@ html, body {
 
 /* ------------------------------ Hero ------------------------------ */
 
-.hero-container {
+.hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,7 +151,7 @@ html, body {
 
 /* ------------------------------- Features ------------------------------ */
 
-.features-container {
+.features-section {
 
     display: flex;
     flex-direction: column;
@@ -213,7 +216,7 @@ html, body {
 
 /* ------------------------------ How Does It Work ------------------------------ */
 
-.how-does-it-work-container {
+.how-does-it-work-section {
     background-color: var(--color-secondary-background);
     padding: 3rem 1rem;
     display: flex;
@@ -247,7 +250,7 @@ html, body {
 
 /* ------------------------------ App Features ------------------------------ */
 
-.app-features-container {
+.app-features-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,16 +308,24 @@ html, body {
     align-items: center;
     justify-content: center;
     background-color: var(--color-brand-primary);
-    width: 160px;
-    height: 45px;
     border-radius: 5px;
+    cursor: pointer;
 }
     
 .learn-more {
     display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     gap: 0.5rem;
     font-size: var(--font-size-small);
+    width: 160px;
+    height: 45px;
+
+    .right-arrow-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .learn-more:visited {
@@ -365,15 +376,15 @@ html, body {
 
 /* ------------------------------ Testimonials ------------------------------ */
 
-.testimonials-container {
+.testimonials-section {
     background-color: var(--color-secondary-background);
 }
 
-.testimonials-wrapper {
+.testimonials-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 0.5rem;
+    padding: 3rem 1rem;
 }
 
 .testimonials-heading {
@@ -396,7 +407,7 @@ html, body {
     border-radius: 8px;
     padding: 3rem 1.5rem 1.5rem 1.5rem;
     position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
     .testimonials-quotation {
         display: flex;
@@ -446,4 +457,130 @@ html, body {
             }
         }
     }
+}
+
+
+/* ------------------------------ FAQ ------------------------------ */
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.faq-heading {
+    font-size: var(--font-size-h2);
+    color: var(--color-text-gray900);
+    text-align: center;
+    max-width: 415px;
+}
+
+.faq-right-container {
+    padding: 0 1rem;
+    max-width: 750px;
+}
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.accordion {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-input {
+    display: none;
+}
+
+.accordion-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: var(--font-size-medium);
+    transition: background 0.1s;
+}
+
+.accordion-label:hover {
+    background: var(--color-hover-background);
+}
+
+.accordion-icon {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: var(--color-text-gray100);
+}
+
+.chevron-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-text-gray800);
+    font-size: 12px;
+}
+
+.accordion-input:checked + .accordion-label .accordion-icon {
+    transform: rotate(180deg);
+    background-color: var(--color-brand-primary);
+    position: relative;
+
+    .chevron-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary-background);
+    }
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    font-size: var(--font-size-small);
+    color: var(--color-text-gray700);
+}
+
+.accordion-input:checked + .accordion-label + .accordion-content {
+    max-height: 100%;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+
+/* ------------------------------ Subscribe ------------------------------ */
+
+.subscribe-section {
+    background-color: var(--color-secondary-background);
+}
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.subscribe-icon {
+    margin-bottom: 1rem;
+}
+
+.subscribe-heading {
+    font-size: var(--font-size-h4);
+    color: var(--color-text-gray900);
+    font-weight: 800;
+    max-width: 420px;
+    text-align: center;
 }

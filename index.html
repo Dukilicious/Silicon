@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silicon</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -39,7 +41,7 @@
     <main>
         
         <!------------ Hero-Start ------------>
-        <section class="hero-container">
+        <section class="hero-section">
             <h1 class="hero-heading">Manage All Your Money in One App</h1>
             <p class="hero-paragraph">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
             <div class="store-badges-container">
@@ -66,7 +68,7 @@
 
 
         <!------------ Features-Start ------------>
-        <section class="features-container">
+        <section class="features-section">
             <h1 class="features-heading">App Features</h1>
             <p class="features-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
             <div class="features">
@@ -136,7 +138,7 @@
 
         
         <!------------ How Does It Work-Start ------------>
-        <section class="how-does-it-work-container">
+        <section class="how-does-it-work-section">
             <h1 class="how-does-it-work-h1">How Does It Work?</h1>
             <img src="images/hdiw-iphone-center.svg" alt="" class="hdiw-iphone-center">
             <h4 class="how-does-it-work-h4">Latest transaction history</h4>
@@ -145,7 +147,7 @@
 
 
         <!------------ App Features-Start ------------>
-        <section class="app-features-container">
+        <section class="app-features-section">
             <div class="app-features-1">
                 <h2 class="app-features-first-heading">Make your money transfer simple and clear</h2>
                 <div class="app-features-list-container">
@@ -167,7 +169,7 @@
                 <div class="learn-more-button1">
                     <a href="/" class="learn-more">
                         <div>Learn more</div>
-                        <img src="images/right-arrow-icon.svg" alt="">
+                        <img class="right-arrow-icon" src="images/right-arrow-icon.svg" alt="">
                     </a>
                 </div>
             </div>
@@ -190,7 +192,7 @@
                 <div class="learn-more-button1">
                     <a href="/" class="learn-more">
                         <div>Learn more</div>
-                        <img src="images/right-arrow-icon.svg" alt="">
+                        <img class="right-arrow-icon" src="images/right-arrow-icon.svg" alt="">
                     </a>
                 </div>         
             </div>
@@ -198,17 +200,17 @@
 
 
         <!------------ Testimonials ------------>
-        <section class="testimonials-container">
-            <div class="testimonials-wrapper">
+        <section class="testimonials-section">
+            <div class="testimonials-container">
                 <h1 class="testimonials-heading">Clients are Loving Our App</h1>
                 <div class="testimonials-boxes">
                     <div class="testimonials-box">
                         <div class="testimonials-quotation">
-                            <img class="quotation-icon" src="images/quotation-mark-icon.svg" alt="">
+                            <img class="quotation-icon" src="images/quotation-mark-icon.svg" alt="quotation icon">
                         </div>
                         <div class="testimonials-inner-box">
                             <div class="testimonials-stars">
-                                <img src="images/4star-rating.svg" alt="">
+                                <img src="images/4star-rating.svg" alt="4 star rating icon">
                             </div>
                             <div class="testimonials-text">Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus,
                                 egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.
@@ -230,7 +232,7 @@
                         </div>
                         <div class="testimonials-inner-box">
                             <div class="testimonials-stars">
-                                <img src="images/5star-rating.svg" alt="">
+                                <img src="images/5star-rating.svg" alt="5 star rating icon">
                             </div>
                             <div class="testimonials-text">Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor.
                             Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.</div>
@@ -258,15 +260,106 @@
                 </div>
                 <div class="faq-right-container">
                     <div class="accordion-container">
-                        <div>
-                            <input type="radio" name="faq-accordion" id="section1">
-                            <label for="section1"></label>
+                        <div class="accordion">
+                            <input type="radio" name="accordion" id="accordion-1" class="accordion-input">
+                            <label for="accordion-1" class="accordion-label">
+                                Is any of my personal information stored in the App?
+                                <div>
+                                    <span class="accordion-icon">
+                                        <i class="bi bi-chevron-down chevron-icon"></i>
+                                    </span>
+                                </div> 
+                            </label>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex recusandae totam deleniti perspiciatis doloribus aperiam eius perferendis accusantium, placeat quia beatae eveniet ad quae corrupti hic in illum commodi qui amet nesciunt dolore quam expedita. Eius tenetur aut rerum totam distinctio unde officia est, quam placeat earum. Qui, nemo. Nobis!</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <input type="radio" name="accordion" id="accordion-2" class="accordion-input">
+                            <label for="accordion-2" class="accordion-label">
+                                What formats can I download my transaction history in?
+                                <div>
+                                    <span class="accordion-icon">
+                                        <i class="bi bi-chevron-down chevron-icon"></i>
+                                    </span>
+                                </div>
+                            </label>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque pariatur doloremque debitis esse similique, id iste itaque ratione officiis repellat laudantium dignissimos, aliquam saepe deserunt harum. Porro adipisci officia eos obcaecati facilis, distinctio accusamus consequuntur! Maxime architecto facere nihil.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <input type="radio" name="accordion" id="accordion-3" class="accordion-input">
+                            <label for="accordion-3" class="accordion-label">
+                                Can I schedule future transfers?
+                                <div>
+                                    <span class="accordion-icon">
+                                        <i class="bi bi-chevron-down chevron-icon"></i>
+                                    </span>
+                                </div>
+                            </label>
+                            <div class="accordion-content">
+                                <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <input type="radio" name="accordion" id="accordion-4" class="accordion-input">
+                            <label for="accordion-4" class="accordion-label">
+                                When can I use Banking App services?
+                                <div>
+                                    <span class="accordion-icon">
+                                        <i class="bi bi-chevron-down chevron-icon"></i>
+                                    </span>
+                                </div>
+                            </label>
+                            <div class="accordion-content">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex maiores culpa itaque quae suscipit, hic totam odit dolore asperiores fugiat dolorem officiis alias, eum quam voluptas vitae nemo vero aspernatur quaerat eos? Et ipsam accusantium voluptatem ad incidunt impedit aliquam corrupti deserunt sint fugiat, quam doloribus omnis, dignissimos quod vitae molestiae aliquid. Numquam quibusdam nulla culpa doloribus voluptates omnis commodi!</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <input type="radio" name="accordion" id="accordion-5" class="accordion-input">
+                            <label for="accordion-5" class="accordion-label">
+                                Can I create my own password that is easy for me to remember?
+                                <div>
+                                    <span class="accordion-icon">
+                                        <i class="bi bi-chevron-down chevron-icon"></i>
+                                    </span>
+                                </div>
+                            </label>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero assumenda voluptatibus quas cum vel aliquid ipsum repellat in enim tenetur inventore temporibus soluta, rerum nulla consectetur necessitatibus similique animi laboriosam eius debitis maxime ullam! Molestiae eveniet, sapiente repellat ea in porro, deserunt dicta tempora suscipit, omnis voluptas officiis ipsa eaque.</p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <input type="radio" name="accordion" id="accordion-6" class="accordion-input">
+                            <label for="accordion-6" class="accordion-label">
+                                What happens if I forget or lose my password?
+                                <div>
+                                    <span class="accordion-icon">
+                                        <i class="bi bi-chevron-down chevron-icon"></i>
+                                    </span>
+                                </div>
+                            </label>
+                            <div class="accordion-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, a repellat quo voluptatem corrupti reprehenderit provident laboriosam saepe minus minima ipsum sunt, officiis ducimus? Asperiores, dolorum voluptates fugiat distinctio sunt, suscipit nihil perspiciatis deleniti natus illum voluptate a excepturi ad?</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    
+
+        <!------------ Subscribe ------------>
+        <section class="subscribe-section">
+            <div class="subscribe-container">
+                <img src="images/notification-icon.svg" alt="notification icon" class="subscribe-icon">
+                <div class="subscribe-heading">
+                    Subscribe to our newsletter to stay informed about latest updates
+                </div>
+                
+            </div>
+        </section>
+
     </main>
 
     <footer></footer>
