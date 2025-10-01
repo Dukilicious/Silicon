@@ -85,6 +85,16 @@
 
                 <div class="feature-group">
                     <div>
+                        <img class="features-icon" src="images/shield-icon.svg" alt="">
+                    </div>
+                    <div class="feature-text">
+                        <h5 class="feature-h5">Data Security</h5>
+                        <p class="feature-p">Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
+                    </div>
+                </div>
+                
+                <div class="feature-group">
+                    <div>
                         <img class="features-icon" src="images/statistics-icon.svg" alt="">
                     </div>
                     <div class="feature-text">
@@ -95,31 +105,21 @@
 
                 <div class="feature-group">
                     <div>
-                        <img class="features-icon" src="images/wallet-icon.svg" alt="">
-                    </div>
-                    <div class="feature-text">
-                        <h5 class="feature-h5">Regular Cashback</h5>
-                        <p class="feature-p">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
-                    </div>
-                </div>
-
-                <div class="feature-group">
-                    <div>
-                        <img class="features-icon" src="images/shield-icon.svg" alt="">
-                    </div>
-                    <div class="feature-text">
-                        <h5 class="feature-h5">Data Security</h5>
-                        <p class="feature-p">Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
-                    </div>
-                </div>
-
-                <div class="feature-group">
-                    <div>
                         <img class="features-icon" src="images/communication-icon.svg" alt="">
                     </div>
                     <div class="feature-text">
                         <h5 class="feature-h5">Support 24/7</h5>
                         <p class="feature-p">A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+                    </div>
+                </div>
+
+                <div class="feature-group">
+                    <div>
+                        <img class="features-icon" src="images/wallet-icon.svg" alt="">
+                    </div>
+                    <div class="feature-text">
+                        <h5 class="feature-h5">Regular Cashback</h5>
+                        <p class="feature-p">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
                     </div>
                 </div>
 
@@ -140,9 +140,12 @@
         <!------------ How Does It Work-Start ------------>
         <section class="how-does-it-work-section">
             <h1 class="how-does-it-work-h1">How Does It Work?</h1>
-            <img src="images/hdiw-iphone-center.svg" alt="" class="hdiw-iphone-center">
-            <h4 class="how-does-it-work-h4">Latest transaction history</h4>
-            <p class="how-does-it-work-p">Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique quisque hac in consectetur condimentum. </p>
+            <div class="mobile-image-container">
+                <img src="images/mobile-iphone.svg" alt="" class="mobile-iphone">
+                <img src="images/app-showcase-screen.svg" alt="" class="app-showcase-screen">
+            </div>
+            <h4 class="how-does-it-work-h4">Transfers to people from your contact list</h4>
+            <p class="how-does-it-work-p">Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
         </section>
 
 
@@ -278,7 +281,7 @@
                 <div class="accordion-container">
                     <div class="accordion">
                         <input type="radio" name="accordion" id="accordion-1" class="accordion-input">
-                        <label for="accordion-1" class="accordion-label">
+                        <label for="accordion-1" class="accordion-label accordion-border-bottom accordion-1-hover">
                             Is any of my personal information stored in the App?
                             <div>
                                 <span class="accordion-icon">
@@ -292,7 +295,7 @@
                     </div>
                     <div class="accordion">
                         <input type="radio" name="accordion" id="accordion-2" class="accordion-input">
-                        <label for="accordion-2" class="accordion-label">
+                        <label for="accordion-2" class="accordion-label accordion-border-bottom">
                             What formats can I download my transaction history in?
                             <div>
                                 <span class="accordion-icon">
@@ -306,7 +309,7 @@
                     </div>
                     <div class="accordion">
                         <input type="radio" name="accordion" id="accordion-3" class="accordion-input">
-                        <label for="accordion-3" class="accordion-label">
+                        <label for="accordion-3" class="accordion-label accordion-border-bottom">
                             Can I schedule future transfers?
                             <div>
                                 <span class="accordion-icon">
@@ -320,7 +323,7 @@
                     </div>
                     <div class="accordion">
                         <input type="radio" name="accordion" id="accordion-4" class="accordion-input">
-                        <label for="accordion-4" class="accordion-label">
+                        <label for="accordion-4" class="accordion-label accordion-border-bottom">
                             When can I use Banking App services?
                             <div>
                                 <span class="accordion-icon">
@@ -334,7 +337,7 @@
                     </div>
                     <div class="accordion">
                         <input type="radio" name="accordion" id="accordion-5" class="accordion-input">
-                        <label for="accordion-5" class="accordion-label">
+                        <label for="accordion-5" class="accordion-label accordion-border-bottom">
                             Can I create my own password that is easy for me to remember?
                             <div>
                                 <span class="accordion-icon">
@@ -348,7 +351,7 @@
                     </div>
                     <div class="accordion">
                         <input type="radio" name="accordion" id="accordion-6" class="accordion-input">
-                        <label for="accordion-6" class="accordion-label">
+                        <label for="accordion-6" class="accordion-label accordion-6-hover">
                             What happens if I forget or lose my password?
                             <div>
                                 <span class="accordion-icon">
@@ -361,22 +364,37 @@
                         </div>
                     </div>
                 </div>
+                <a href="/" class="contact-us-button">
+                    Contact us now
+                </a>
             </div>
         </section>
 
         <!------------ Subscribe ------------>
         <section class="subscribe-section">
             <div class="subscribe-container">
-                <img src="images/notification-icon.svg" alt="notification icon" class="subscribe-icon">
-                <div class="subscribe-heading">
-                    Subscribe to our newsletter to stay informed about latest updates
+                <div class="subscribe-heading-image">
+                    <img src="images/notification-icon.svg" alt="notification icon" class="subscribe-icon">
+                    <div class="subscribe-heading">
+                        Subscribe to our newsletter to stay informed about latest updates
+                    </div>
+                    <div class="subscribe-heading-mobile">
+                        Subscribe to our newsletter   
+                    </div>
                 </div>
-                <div class="input-wrapper">
-                    <span class="input-icon">
-                        <i class="bi bi-envelope"></i> <!-- Bootstrap icon -->
-                    </span>
-                    <input type="email" placeholder="Your Email" class="email-input">
-                </div>
+                <div class="input-subscribe-button-container">
+                    <div class="input-wrapper">
+                        <span class="input-icon">
+                            <i class="bi bi-envelope"></i>
+                        </span>
+                        <input type="email" placeholder="Your Email" class="email-input">
+                    </div>
+                    <div>
+                        <a href="/" class="subscribe-button">
+                            Subscribe
+                        </a>
+                    </div>
+                </div> 
             </div>
         </section>
 
