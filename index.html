@@ -12,29 +12,30 @@
     
     <!---------------------- Header-Start ---------------------->
     <header>
-
-        <div class="header-container">
-            <div class="header-logo">
+        <nav class="nav-container">
+            <div class="header-container">
+                
                 <a href="/">
                     <img src="images/silicon-logo.svg" alt="Silicon Inc. Logotype">
                 </a>
-            </div>
+                
 
-            <div class="actions">
-                <div class="darkmode-text">Dark Mode</div>
-                <label class="toggle">
-                    <input type="checkbox" id="darkmode-switch">
-                    <span class="slider"></span>
-                </label>
-            
-                <div class="sign-in-btn">
-                    <a href="/">
-                        <img src="images/user-icon.svg" alt="" class="sign-in-icon">
-                    </a>
+                <div class="actions">
+                    <div class="darkmode-text">Dark Mode</div>
+                    <label class="darkmode-toggle">
+                        <input type="checkbox" id="darkmode-switch">
+                        <span class="darkmode-slider"></span>
+                    </label>
+                
+                    <button class="sign-in-btn">
+                        <a href="/" class="sign-in-text">
+                            <img src="images/user-icon.svg" alt="sign in icon" class="sign-in-icon">
+                            Sign in / up
+                        </a>
+                    </button>
                 </div>
             </div>
-        </div>
-    
+        </nav>
     </header>
     
     <!---------------------- Main-Start ---------------------->
@@ -42,26 +43,55 @@
         
         <!------------ Hero-Start ------------>
         <section class="hero-section">
-            <h1 class="hero-heading">Manage All Your Money in One App</h1>
-            <p class="hero-paragraph">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
-            <div class="store-badges-container">
-                <div class="store-badge-box">  
-                    <a href="/" class="store-badge" target="_blank" rel="noopener">
-                        <img src="images/apple-icon.svg" alt="Apple Icon">
-                        <span class="store-badge-text">
-                            <span class="badge-text-top">Download on the</span>
-                            <span class="badge-text-bottom">App Store</span>
-                        </span>
-                    </a>
+            <div class="hero-container">
+                <div class="content-container">
+                    <h1 class="hero-heading">Manage All Your Money in One App</h1>
+                    <p class="hero-paragraph">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
+                    <div class="store-badges-container">
+                        <button class="store-badge-box apple-box">  
+                            <a href="/" class="store-badge" target="_blank" rel="noopener">
+                                <img src="images/apple-icon.svg" alt="Apple Icon">
+                                <span class="store-badge-text">
+                                    <span class="badge-text-top text-top-apple">Download on the</span>
+                                    <span class="badge-text-bottom">App Store</span>
+                                </span>
+                            </a>
+                        </button>
+                        <button class="store-badge-box google-box">
+                            <a href="/" class="store-badge" target="_blank" rel="noopener">
+                                <img src="images/google-icon.svg" alt="Google Play Icon">
+                                <span class="store-badge-text">
+                                    <span class="badge-text-top text-top-google">GET IT ON</span>
+                                    <span class="badge-text-bottom">Google Play</span>
+                                </span>
+                            </a>
+                        </button>
+                    </div>
                 </div>
-                <div class="store-badge-box">
-                    <a href="/" class="store-badge" target="_blank" rel="noopener">
-                        <img src="images/google-icon.svg" alt="Google Play Icon">
-                        <span class="store-badge-text">
-                            <span class="badge-text-top">GET IT ON</span>
-                            <span class="badge-text-bottom">Google Play</span>
-                        </span>
-                    </a>
+                <img src="images/hero-image.svg" alt="" class="hero-image">
+            </div>    
+        </section>
+
+        <!------------ Brands-Start ------------>
+        <section class="brands-section">
+            <div class="brands-container">
+                <div class="brands-box">
+                    <img src="images/brands-logo1.svg" alt="brands logo" class="brands-logo">
+                </div>
+                <div class="brands-box">
+                    <img src="images/brands-logo2.svg" alt="brands logo" class="brands-logo">
+                </div>
+                <div class="brands-box">
+                    <img src="images/brands-logo3.svg" alt="brands logo" class="brands-logo">
+                </div>
+                <div class="brands-box">
+                    <img src="images/brands-logo4.svg" alt="brands logo" class="brands-logo">
+                </div>
+                <div class="brands-box">
+                    <img src="images/brands-logo5.svg" alt="brands logo" class="brands-logo">
+                </div>
+                <div class="brands-box">
+                    <img src="images/brands-logo6.svg" alt="brands logo" class="brands-logo">
                 </div>
             </div>
         </section>
@@ -69,135 +99,158 @@
 
         <!------------ Features-Start ------------>
         <section class="features-section">
-            <h1 class="features-heading">App Features</h1>
-            <p class="features-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
-            <div class="features">
-                
-                <div class="feature-group">
-                    <div>
-                        <img class="features-icon" src="images/credit-card-icon.svg" alt="">
-                    </div>
-                    <div class="feature-text">
-                        <h5 class="feature-h5">Easy Payments</h5>
-                        <p class="feature-p">Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
-                    </div>
+            <div class="features-container">
+                <div class="feature-image">
+                    <img src="images/features-image.svg" alt="features image">
                 </div>
+                <div class="features-content">
+                    <h1 class="features-heading">App Features</h1>
+                    <p class="features-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+                    <div class="features">
+                        
+                        <div class="feature-group">
+                            <div>
+                                <img class="features-icon" src="images/credit-card-icon.svg" alt="">
+                            </div>
+                            <div class="feature-text">
+                                <h5 class="feature-h5">Easy Payments</h5>
+                                <p class="feature-p">Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                            </div>
+                        </div>
 
-                <div class="feature-group">
-                    <div>
-                        <img class="features-icon" src="images/shield-icon.svg" alt="">
-                    </div>
-                    <div class="feature-text">
-                        <h5 class="feature-h5">Data Security</h5>
-                        <p class="feature-p">Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
-                    </div>
-                </div>
-                
-                <div class="feature-group">
-                    <div>
-                        <img class="features-icon" src="images/statistics-icon.svg" alt="">
-                    </div>
-                    <div class="feature-text">
-                        <h5 class="feature-h5">Cost Statistics</h5>
-                        <p class="feature-p">Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
-                    </div>
-                </div>
+                        <div class="feature-group">
+                            <div>
+                                <img class="features-icon" src="images/shield-icon.svg" alt="">
+                            </div>
+                            <div class="feature-text">
+                                <h5 class="feature-h5">Data Security</h5>
+                                <p class="feature-p">Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-group">
+                            <div>
+                                <img class="features-icon" src="images/statistics-icon.svg" alt="">
+                            </div>
+                            <div class="feature-text">
+                                <h5 class="feature-h5">Cost Statistics</h5>
+                                <p class="feature-p">Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
+                            </div>
+                        </div>
 
-                <div class="feature-group">
-                    <div>
-                        <img class="features-icon" src="images/communication-icon.svg" alt="">
-                    </div>
-                    <div class="feature-text">
-                        <h5 class="feature-h5">Support 24/7</h5>
-                        <p class="feature-p">A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+                        <div class="feature-group">
+                            <div>
+                                <img class="features-icon" src="images/communication-icon.svg" alt="">
+                            </div>
+                            <div class="feature-text">
+                                <h5 class="feature-h5">Support 24/7</h5>
+                                <p class="feature-p">A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-group">
+                            <div>
+                                <img class="features-icon" src="images/wallet-icon.svg" alt="">
+                            </div>
+                            <div class="feature-text">
+                                <h5 class="feature-h5">Regular Cashback</h5>
+                                <p class="feature-p">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-group">
+                            <div>
+                                <img class="features-icon" src="images/standards-icon.svg" alt="">
+                            </div>
+                            <div class="feature-text">
+                                <h5 class="feature-h5">Top Standards</h5>
+                                <p class="feature-p">Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="feature-group">
-                    <div>
-                        <img class="features-icon" src="images/wallet-icon.svg" alt="">
-                    </div>
-                    <div class="feature-text">
-                        <h5 class="feature-h5">Regular Cashback</h5>
-                        <p class="feature-p">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
-                    </div>
-                </div>
-
-                <div class="feature-group">
-                    <div>
-                        <img class="features-icon" src="images/standards-icon.svg" alt="">
-                    </div>
-                    <div class="feature-text">
-                        <h5 class="feature-h5">Top Standards</h5>
-                        <p class="feature-p">Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
-                    </div>
-                </div>
-
             </div>
         </section>
 
         
         <!------------ How Does It Work-Start ------------>
         <section class="how-does-it-work-section">
-            <h1 class="how-does-it-work-h1">How Does It Work?</h1>
-            <div class="mobile-image-container">
-                <img src="images/mobile-iphone.svg" alt="" class="mobile-iphone">
-                <img src="images/app-showcase-screen.svg" alt="" class="app-showcase-screen">
+            <div class="how-does-it-work-container">
+                <div class="hdiw-heading">
+                    How Does It Work?
+                </div>
+                <div class="hdiw-images">
+                    <img src="images/hdiw-iphone-left.svg" alt="" class="image-left">
+                    <img src="images/hdiw-iphone-center.svg" alt="" class="image-center">
+                    <img src="images/hdiw-iphone-right.svg" alt="" class="image-right">
+                </div>
+                <div class="hdiw-text-container">
+                    <div class="hdiw-h4">
+                        Latest transaction history
+                    </div>
+                    <p class="hdiw-paragraph">
+                        Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique quisque hac in consectetur condimentum. 
+                    </p>
+                </div>
             </div>
-            <h4 class="how-does-it-work-h4">Transfers to people from your contact list</h4>
-            <p class="how-does-it-work-p">Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
         </section>
 
 
         <!------------ App Features-Start ------------>
         <section class="app-features-section">
-            <div class="app-features-1">
-                <h2 class="app-features-first-heading">Make your money transfer simple and clear</h2>
-                <div class="app-features-list-container">
-                    <div class="app-features-list">
-                        <span class="app-features-checkbox"></span>
-                        <div>Banking transactions are free for you</div>
-                    </div>
-                    
-                    <div class="app-features-list">
-                        <span class="app-features-checkbox"></span>   
-                        <div>No monthly cash commission</div>
-                    </div>
+            <div class="app-features-top-container">
+                <div class="app-features-1">
+                    <h2 class="app-features-first-heading">Make your money transfer simple and clear</h2>
+                    <div class="app-features-list-container">
+                        <div class="app-features-list">
+                            <span class="app-features-checkbox"></span>
+                            <div>Banking transactions are free for you</div>
+                        </div>
+                        
+                        <div class="app-features-list">
+                            <span class="app-features-checkbox"></span>   
+                            <div>No monthly cash commission</div>
+                        </div>
 
-                    <div class="app-features-list">
-                        <span class="app-features-checkbox"></span>
-                        <div>Manage payments and transactions online</div>
+                        <div class="app-features-list">
+                            <span class="app-features-checkbox"></span>
+                            <div>Manage payments and transactions online</div>
+                        </div>
+                    </div>
+                    <div class="learn-more-button1">
+                        <a href="/" class="learn-more">
+                            <div>Learn more</div>
+                            <img class="right-arrow-icon" src="images/right-arrow-icon.svg" alt="">
+                        </a>
                     </div>
                 </div>
-                <div class="learn-more-button1">
-                    <a href="/" class="learn-more">
-                        <div>Learn more</div>
-                        <img class="right-arrow-icon" src="images/right-arrow-icon.svg" alt="">
-                    </a>
-                </div>
+                <img src="images/app-features-image1.svg" alt="" class="app-features-top-image">
             </div>
-            <div class="app-features-2">
-                <h2 class="app-features-second-heading">Receive payment from international bank details</h2>
-                <div class="app-features-2-wrapper">
-                    <div class="app-features-2-box">
-                        <div>
-                            <img class="app-features-icon" src="images/credit-card-icon.svg" alt="">
+            <div class="app-features-bottom-container">
+                <img src="images/app-features-image2.svg" alt="" class="app-features-bottom-image">
+                <div class="app-features-2">
+                    <h2 class="app-features-second-heading">Receive payment from international bank details</h2>
+                    <div class="app-features-2-wrapper">
+                        <div class="app-features-2-box">
+                            <div>
+                                <img class="app-features-icon" src="images/credit-card-icon.svg" alt="">
+                            </div>
+                            <div class="app-features-2-text">Manage your payments online. Mollis congue egestas egestas fermentum fames.</div>
                         </div>
-                        <div class="app-features-2-text">Manage your payments online. Mollis congue egestas egestas fermentum fames.</div>
-                    </div>
-                    <div class="app-features-2-box">
-                        <div>
-                            <img class="app-features-icon" src="images/wallet-icon.svg" alt="">
+                        <div class="app-features-2-box">
+                            <div>
+                                <img class="app-features-icon" src="images/wallet-icon.svg" alt="">
+                            </div>
+                            <div class="app-features-2-text">A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</div>
                         </div>
-                        <div class="app-features-2-text">A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</div>
                     </div>
+                    <div class="learn-more-button1">
+                        <a href="/" class="learn-more">
+                            <div>Learn more</div>
+                            <img class="right-arrow-icon" src="images/right-arrow-icon.svg" alt="">
+                        </a>
+                    </div>         
                 </div>
-                <div class="learn-more-button1">
-                    <a href="/" class="learn-more">
-                        <div>Learn more</div>
-                        <img class="right-arrow-icon" src="images/right-arrow-icon.svg" alt="">
-                    </a>
-                </div>         
             </div>
         </section>
 
@@ -258,24 +311,26 @@
         <!------------ FAQ ------------>
         <section class="faq-section">
             <div class="faq-container">
-                <h2 class="faq-heading">Any questions? Check out the FAQs</h2>
                 <div class="contact-container">
+                    <h2 class="faq-heading">Any questions? Check out the FAQs</h2>
                     <div class="contact-text">Still have unanswered questions and need to get in touch?</div>
-                    <div class="contact-phone-box">
-                        <img src="images/phone-icon.svg" alt="phone icon" class="phone-icon">
-                        Still have questions?
-                        <a href="/" class="phone-contact-us">
-                            Contact us
-                            <i class="bi bi-arrow-right-short contact-purple-arrow-icon"></i>
-                        </a>
-                    </div>
-                    <div class="contact-message-box">
-                        <img src="images/message-icon.svg" alt="message icon" class="message-icon">
-                        Dont like phone calls?
-                        <a href="/" class="message-contact-us">
-                            Contact us
-                            <i class="bi bi-arrow-right-short contact-green-arrow-icon"></i>
-                        </a>
+                    <div class="contact-box">
+                        <div class="contact-phone-box">
+                            <img src="images/phone-icon.svg" alt="phone icon" class="phone-icon">
+                            Still have questions?
+                            <a href="/" class="phone-contact-us">
+                                Contact us
+                                <i class="bi bi-arrow-right-short contact-purple-arrow-icon"></i>
+                            </a>
+                        </div>
+                        <div class="contact-message-box">
+                            <img src="images/message-icon.svg" alt="message icon" class="message-icon">
+                            Dont like phone calls?
+                            <a href="/" class="message-contact-us">
+                                Contact us
+                                <i class="bi bi-arrow-right-short contact-green-arrow-icon"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="accordion-container">
@@ -364,9 +419,6 @@
                         </div>
                     </div>
                 </div>
-                <a href="/" class="contact-us-button">
-                    Contact us now
-                </a>
             </div>
         </section>
 
@@ -378,18 +430,15 @@
                     <div class="subscribe-heading">
                         Subscribe to our newsletter to stay informed about latest updates
                     </div>
-                    <div class="subscribe-heading-mobile">
-                        Subscribe to our newsletter   
-                    </div>
                 </div>
-                <div class="input-subscribe-button-container">
+                <div class="input-subscribe-container">
                     <div class="input-wrapper">
                         <span class="input-icon">
                             <i class="bi bi-envelope"></i>
                         </span>
                         <input type="email" placeholder="Your Email" class="email-input">
                     </div>
-                    <div>
+                    <button class="subscribe-button-container">
                         <a href="/" class="subscribe-button">
                             Subscribe
                         </a>
@@ -400,7 +449,9 @@
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer-text">© 2025 Silicon. All rights reserved.</div>
+    </footer>
 
 </body>
 </html>
